@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    dir('') {  // Navigate to the correct directory
+                        if (fileExists('pom.xml')) {
+                            echo "pom.xml found, proceeding with build..."
+                            bat "mvn clean"
+                        } else {
+                            error "pom.xml not found in directory: ${pwd()}"
+                        }
+                    }
+                }
+            }
+        }
+        stage('Compile') {
+            steps {
+                script {
+                    dir('') {  // Navigate to the correct directory
+                        if (fileExists('pom.xml')) {
+                            echo "pom.xml found, proceeding with compilation..."
+                            bat "mvn compile"
+                        } else {
+                            error "pom.xml not found in directory: ${pwd()}"
+                        }
+                    }
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                script {
+                    dir('') {  // Navigate to the correct directory
+                        if (fileExists('pom.xml')) {
+                            echo "pom.xml found, proceeding with tests..."
+                            bat "mvn test"
+                        } else {
+                            error "pom.xml not found in directory: ${pwd()}"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
