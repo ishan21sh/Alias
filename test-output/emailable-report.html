@@ -9,29 +9,88 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">212,823</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">20,902</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2</td><td><a href="#m0">verifyUserIsAbleToAddPDPDetailsToExcel</a></td><td rowspan="1">1731826928498</td><td rowspan="1">182454</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2</td><td><a href="#m0">openTheAppliaction</a></td><td rowspan="1">1732546957742</td><td rowspan="1">20829</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2</td><td><a href="#m1">stopAppiumServer</a></td><td rowspan="1">1732546978688</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">tearDown</a></td><td rowspan="1">1732546978629</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2</td><td><a href="#m3">verifyUserIsAbleToAddPDPDetailsToExcel</a></td><td rowspan="1">1732546978623</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2#verifyUserIsAbleToAddPDPDetailsToExcel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2.verifyUserIsAbleToAddPDPDetailsToExcel(TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2.java:71)
+<h2>Default test</h2><h3 id="m0">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2#openTheAppliaction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20000ms 
+Host info: host: &apos;ISHAN_WORK&apos;, ip: &apos;192.168.31.233&apos;
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\ishan\eclipse-work..., appActivity: com.onesell.android.main.Ma..., appPackage: org.alias, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: OnePlus, noReset: false, platformName: ANDROID}, capabilities=[{appium:app=C:\Users\ishan\eclipse-workspace\Alias\src\test\resource\config\org_alias_v1.36.1.apk.support.apk, appium:appActivity=com.onesell.android.main.MainActivity, appium:appPackage=org.alias, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:deviceName=OnePlus, appium:noReset=false, platformName=ANDROID}]}]
+Capabilities {app: C:\Users\ishan\eclipse-work..., appActivity: com.onesell.android.main.Ma..., appPackage: org.alias, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: OnePlus, noReset: false, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at com.qa.alias.factory.SeleniumFactory.openApkFileAppPackageAndActivity(SeleniumFactory.java:117)
+	at com.qa.alias.base.TestBase.openTheAppliaction(TestBase.java:126)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2#stopAppiumServer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2#verifyUserIsAbleToAddPDPDetailsToExcel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20000ms 
+Host info: host: &apos;ISHAN_WORK&apos;, ip: &apos;192.168.31.233&apos;
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\ishan\eclipse-work..., appActivity: com.onesell.android.main.Ma..., appPackage: org.alias, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: OnePlus, noReset: false, platformName: ANDROID}, capabilities=[{appium:app=C:\Users\ishan\eclipse-workspace\Alias\src\test\resource\config\org_alias_v1.36.1.apk.support.apk, appium:appActivity=com.onesell.android.main.MainActivity, appium:appPackage=org.alias, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:deviceName=OnePlus, appium:noReset=false, platformName=ANDROID}]}]
+Capabilities {app: C:\Users\ishan\eclipse-work..., appActivity: com.onesell.android.main.Ma..., appPackage: org.alias, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: OnePlus, noReset: false, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at com.qa.alias.factory.SeleniumFactory.openApkFileAppPackageAndActivity(SeleniumFactory.java:117)
+	at com.qa.alias.base.TestBase.openTheAppliaction(TestBase.java:126)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)

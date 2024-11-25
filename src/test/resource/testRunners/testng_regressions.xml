@@ -6,11 +6,12 @@
 	<listeners>
 		<listener class-name="com.qa.alias.listeners.ExtentReportListener"></listener>
 	</listeners>
-	
+
 	<test name="Verify User Is Able To Add PDP Details To Excel">
 		<classes>
-			<class name="com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2.java" />
+			<class
+				name="com.qa.alias.tests.TC005_without_vpn_verify_user_is_able_to_add_number_of_products_to_PDP_details_to_excel_with_sell_data2" />
 		</classes>
 	</test>
-	
+
 </suite>
